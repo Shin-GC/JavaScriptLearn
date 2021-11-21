@@ -174,20 +174,29 @@
 //     }
 // }
 
-function printTriangle(height) {
-    let message = ''
-    for (let i = 0; i < height; i++){
-        message += '*';
-        console.log(`${message}`);
+// function printTriangle(height) {
+//     let message = ''
+//     for (let i = 0; i < height; i++){
+//         message += '*';
+//         console.log(`${message}`);
+//     }
+// }
+//
+// // 테스트 코드
+// console.log('높이: 1');
+// printTriangle(1);
+//
+// console.log('높이: 3');
+// printTriangle(3);
+//
+// console.log('높이: 5');
+// printTriangle(5);
+
+let i = 0;
+while (i <= 100){
+    if (i % 2 !== 0){
+        console.log(i);
+        i++;
     }
+    i++;
 }
-
-// 테스트 코드
-console.log('높이: 1');
-printTriangle(1);
-
-console.log('높이: 3');
-printTriangle(3);
-
-console.log('높이: 5');
-printTriangle(5);
