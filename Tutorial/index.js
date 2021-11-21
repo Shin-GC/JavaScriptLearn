@@ -1,15 +1,7 @@
-// 여기에 코드를 입력해 주세요.
-function teraToGiga(value){
-    console.log(value + "TB는")
-    console.log(value * 1024 + "GB 입니다.")
-}
-function teraToMega(value){
-    console.log(value + "TB는")
-    console.log(value * 1024 * 1024 + "MB 입니다.")
+function bmiCalculator(name, weight, tall){
+    console.log(name + "님의 체질량 지수는 " + weight / (tall * tall / 10000) + "입니다.")
 }
 
-
-// TB -> GB 테스트
-teraToGiga(2);
-// TB -> MB 테스트
-teraToMega(2);
+bmiCalculator('홀쭉이', 43.52, 160);
+bmiCalculator('코린이', 61.25, 175);
+bmiCalculator('통통이', 77.76, 180);
