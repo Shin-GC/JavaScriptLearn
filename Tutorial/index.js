@@ -48,16 +48,43 @@
 // tagNotification(errorTag);
 // tagNotification(adultTag);
 
-function checkHeight(height) {
-	if (height >= 140){
-        console.log('탑승이 가능합니다.')
+// function checkHeight(height) {
+// 	if (height >= 140){
+//         console.log('탑승이 가능합니다.')
+//     }
+//     else{
+//         console.log('탑승이 불가능합니다.')
+//     }
+// }
+//
+// // 테스트 코드
+// checkHeight(140);
+// checkHeight(135);
+// checkHeight(170);
+
+
+function printGrade(midtermScore, finalScore){
+	let totalScore = midtermScore + finalScore;
+
+    if (totalScore >= 90){
+        console.log('A')
     }
-    else{
-        console.log('탑승이 불가능합니다.')
+    else if(totalScore >= 80){
+        console.log('B')
+    }
+    else if(totalScore >= 70){
+        console.log('C')
+    }
+    else if(totalScore >= 60){
+        console.log('D')
+    }
+    else if(totalScore < 60){
+        console.log('F')
     }
 }
 
 // 테스트 코드
-checkHeight(140);
-checkHeight(135);
-checkHeight(170);
+printGrade(25, 35);
+printGrade(50, 45);
+printGrade(29, 24);
+printGrade(37, 42);
