@@ -31,19 +31,33 @@
 
 // 아래에 adultTag, teenagerTag, errorTag, transferTag라는 변수들을 작성해 주세요.
 
-let adultTag = "삑!"
-let teenagerTag = "삑삑!"
-let errorTag = "삑삑삑!"
-let transferTag = "환승입니다."
+// let adultTag = "삑!"
+// let teenagerTag = "삑삑!"
+// let errorTag = "삑삑삑!"
+// let transferTag = "환승입니다."
+//
+// function tagNotification(tag){
+//   console.log(`${tag}`);
+// }
+//
+//
+// // 테스트 코드
+// tagNotification(adultTag);
+// tagNotification(teenagerTag);
+// tagNotification(transferTag);
+// tagNotification(errorTag);
+// tagNotification(adultTag);
 
-function tagNotification(tag){
-  console.log(`${tag}`);
+function checkHeight(height) {
+	if (height >= 140){
+        console.log('탑승이 가능합니다.')
+    }
+    else{
+        console.log('탑승이 불가능합니다.')
+    }
 }
 
-
 // 테스트 코드
-tagNotification(adultTag);
-tagNotification(teenagerTag);
-tagNotification(transferTag);
-tagNotification(errorTag);
-tagNotification(adultTag);
+checkHeight(140);
+checkHeight(135);
+checkHeight(170);
