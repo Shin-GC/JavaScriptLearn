@@ -192,11 +192,62 @@
 // console.log('높이: 5');
 // printTriangle(5);
 
-let i = 0;
-while (i <= 100){
-    if (i % 2 !== 0){
-        console.log(i);
-        i++;
-    }
-    i++;
+// let i = 0;
+// while (i <= 100){
+//     if (i % 2 !== 0){
+//         console.log(i);
+//         i++;
+//     }
+//     i++;
+// }
+
+// const N = 180;
+//
+// let i = 1;
+// let count = 0;
+// while (i <= N){
+//     if (N % i === 0){
+//         console.log(i);
+//         count += 1;
+//     }
+//     i++;
+// }
+// console.log(`${N}의 약수는 총 ${count}개 입니다.`)
+
+// for (let i = 1; i <= 9; i++){
+//     for (let j = 1; j <= 9; j++){
+//         console.log(`${i} * ${j} = ${i*j}`)
+//     }
+// }
+
+let previous = 1;  // 1
+let current = 0;  // 2
+let i = 1;
+let temp = 0;
+while(i <= 50){
+    temp = current;
+    current += previous;
+    previous = temp;
+    console.log(current)
+    i += 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
