@@ -121,3 +121,71 @@
 //     console.log('This job will be done by server soon!');
 //   })
 
+// function pick(menus) {
+//   console.log('Pick random menu!');
+//   return new Promise((resolve, reject) => {
+//     if (menus.length === 0) {
+//       reject(new Error('Need Candidates'));
+//     } else {
+//       setTimeout(() => {
+//         const randomIdx = Math.floor(Math.random() * menus.length);
+//         const selectedMenu = menus[randomIdx];
+//         resolve(selectedMenu)
+//       }, 1000); // 시간이 걸리는 걸 시뮬레이션하기 위한 1초입니다.
+//     }
+//   });
+// }
+// function getRandomMenu() {
+//   return fetch('https://learn.codeit.kr/api/menus')
+//     .then((response) => response.json())
+//     .then((result) => {
+//       return pick(result); // ! random pick function
+//     });
+// }
+// getRandomMenu()
+//   .then((menu) => {
+//     console.log(`Today's lunch is ${menu.name} ~`);
+//   })
+//   .catch((error) => {
+//     console.log(error.message);
+//   })
+//   .finally(() => {
+//     console.log('Random Menu candidates change everyday');
+//   });
+
+// function pick(menus){
+//   console.log("오늘의 랜덤 음식!")
+//   return new Promise((resolve, reject) => {
+//     if (menus.length === 0) {
+//       reject(new Error("음식 후보가 필요합니다!"))
+//     }
+//     else {
+//       setTimeout(() => {
+//         const randomIdx = Math.floor(Math.random() * menus.length);
+//         const selectedMenu = menus[randomIdx];
+//         resolve(selectedMenu)
+//       }, 1000)
+//     }
+//   })
+// }
+//
+//
+// function randomMenu() {
+//   return fetch('https://learn.codeit.kr/api/menus')
+//     .then((response) => response.json())
+//     .then((result) => {
+//       return pick(result)
+//     })
+// }
+//
+// randomMenu()
+//   .then((menu) => {
+//     console.log(`오늘의 랜덤 메뉴는 ${menu.name} 입니다~~!`)
+//   })
+//   .catch((error) => {
+//     console.log(`에러 발생 : ${error.message}`)
+//   })
+//   .finally(() => {
+//     console.log("다음에 또 사용해주세요 :)")
+//   })
+
