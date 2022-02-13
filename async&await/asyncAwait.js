@@ -76,3 +76,83 @@
 // await getTheLastPostOfTheLastUser().then((lastPost) => {
 //   console.log(lastPost);
 // });
+
+// const p1 = fetch('https://jsonplaceholder.typicode.com/users?id=1')
+//   .then((response) => response.text());
+// const p2 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve('hello');
+//   }, 2000);
+// });
+//
+// const p3 = Promise.resolve('Success');
+//
+// // const p4 = Promise.reject(new Error('Fail'));
+//
+// async function test() {
+//   console.log(await p1);
+//   console.log(await p2);
+//   console.log(await p3);
+//   // console.log(await p4);
+// }
+//
+// console.log('----Start----');
+// test();
+// console.log('-----End----');
+
+// async function showQuiz() {
+//   try {
+//     const response = await fetch('https://learn.codeit.kr/api/quiz');
+//     const test = await response.json();
+//     console.log(test)
+//     const yourAnswer = prompt(test.quiz);
+//     if (yourAnswer.toLowerCase() === test.answer) {
+//       alert(`정답 입니다!`);
+//     } else {
+//       throw new Error('wrong');
+//     }
+//   } catch (error) {
+//     if (error.message === 'wrong') {
+//       alert('틀렸습니다!');
+//     } else {
+//       alert('Error');
+//     }
+//   } finally {
+//     alert("끝!");
+//   }
+// }
+// showQuiz();
+
+// async function pick(menus) {
+//   console.log('Pick random menu!');
+//
+//   const p = new Promise((resolve, reject) => {
+//     if (menus.length === 0) {
+//       reject(new Error('Need Candidates'));
+//     } else {
+//       setTimeout(() => {
+//         const randomIdx = Math.floor(Math.random() * menus.length);
+//         const selectedMenu = menus[randomIdx];
+//         resolve(selectedMenu);
+//       }, 1000);
+//     }
+//   });
+//   return p
+// }
+//
+// async function getRandomMenu() {
+//   console.log('---Please wait!---');
+//   try {
+//     const response = await fetch('https://learn.codeit.kr/api/menus')
+//     const menus = await response.json()
+//     const menu = await pick(menus);
+//     console.log(`Today's lunch is ${menu.name}~`);
+//   } catch (error) {
+//     console.log(error.message)
+//   } finally {
+//     console.log('Random Menu candidates change everyday');
+//   }
+// }
+//
+//
+// getRandomMenu()

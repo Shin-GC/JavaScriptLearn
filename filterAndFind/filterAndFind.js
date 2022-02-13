@@ -9,5 +9,8 @@ const seoul = ['김영훈', '김윤수', '김동욱', '강대위', '김영준',
 // 여기에 코드를 작성해 주세요.
 const notKims = seoul.filter((e) => e[0] !== "김")
 
+const findKim = seoul.find((e) => e[0] === "김")
 // 테스트 코드
 console.log(notKims);
+console.log(findKim)
+
