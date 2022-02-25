@@ -4,3 +4,6 @@ express/node_modules
 mongoose/node_modules
 expressProject/node_modules
 expressGenerator/node_modules
+expressRegister/node_modules
+cloudMongo/node_modules
+expressRegister/.eslintrc.js
