@@ -8,7 +8,7 @@ const Strategy = require('passport-local').Strategy;
 const session = require('express-session')
 const userModel = require("./models/schemas/userSchema");
 const hash = require("./utils/hash-password");
-
+const postRouter = require('./routes/postApi')
 // // Body의 데이터를 불러오기 위한 두가지 설정
 // app.use(bodyParser.urlencoded({extended: false}))
 // app.use(express.json())
@@ -32,7 +32,7 @@ app.set('view engine', 'pug');
 app.set('views', './views');
 
 app.use('/', userRouter)
-
+app.use('/post', postRouter)
 
 
 app.listen(3000, () => console.log('connected, 3000'));
